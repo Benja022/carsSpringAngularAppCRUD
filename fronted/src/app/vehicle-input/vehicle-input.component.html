@@ -1,0 +1,23 @@
+<form #vehicleForm="ngForm" class="vehicle-form" (ngSubmit)="onSubmit()">
+    <mat-form-field class="vehicle-full-width">
+        <mat-label>Brand</mat-label>
+        <input name="brand" ngModel matInput>
+      </mat-form-field>
+
+      <mat-form-field class="vehicle-full-width">
+        <mat-label>Model</mat-label>
+        <input name="model" ngModel matInput>
+      </mat-form-field>
+
+      <mat-form-field class="vehicle-full-width">
+        <mat-label>Year</mat-label>
+        <input name="year" ngModel matInput>
+      </mat-form-field>
+
+      <mat-form-field class="vehicle-full-width">
+        <mat-label>Color</mat-label>
+        <input name="color" ngModel matInput>
+      </mat-form-field>
+
+      <button type="submit" mat-raised-button>Submit</button>
+</form>

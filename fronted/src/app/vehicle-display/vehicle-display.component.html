@@ -1,1 +1,12 @@
-<p>vehicle-display works!</p>
+<p>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{vehicle.brand}} {{vehicle.model}}</mat-card-title>
+      <mat-card-subtitle>{{vehicle.year}} {{vehicle.color}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions align="end">
+      <button (click)="editItemEvent.emit(vehicle.id)" mat-butto>Edit</button>
+      <button (click)="removeItemEvent.emit(vehicle.id)" mat-butto>Delete</button>
+    </mat-card-actions>
+  </mat-card>
+</p>
